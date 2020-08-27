@@ -2,13 +2,15 @@ package br.com.costa.beer.mapper;
 
 import br.com.costa.beer.dto.BeerDTO;
 import br.com.costa.beer.entity.Beer;
+import org.mapstruct.Mapper;
+import org.mapstruct.factory.Mappers;
 
-public class BeerMapper {
-    public static final BeerMapper INSTANCE = ;
+@Mapper
+public interface BeerMapper {
 
-    public BeerDTO toDTO(Beer foundBeer) {
-    }
+    BeerMapper INSTANCE = Mappers.getMapper(BeerMapper.class);
 
-    public Beer toModel(BeerDTO beerDTO) {
-    }
+    BeerDTO toDTO(Beer foundBeer);
+
+    Beer toModel(BeerDTO beerDTO);
 }

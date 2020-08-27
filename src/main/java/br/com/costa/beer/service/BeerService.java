@@ -34,7 +34,7 @@ public class BeerService {
 
     public BeerDTO findByName(String name) throws BeerNotFoundException {
         Beer foundBeer = this.repository.findByName(name)
-                .orElseThrow(() -> new BeerNotFoundException());
+                .orElseThrow(() -> new BeerNotFoundException(name));
 
         return mapperBeer.toDTO(foundBeer);
     }
