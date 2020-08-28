@@ -19,14 +19,14 @@ public class BeerController {
 
     private final BeerService service;
 
-     @PostMapping
-     @ResponseStatus(HttpStatus.CREATED)
+    @PostMapping
+    @ResponseStatus(HttpStatus.CREATED)
     public BeerDTO createBeer(@RequestBody @Valid BeerDTO beerDTO) throws BeerAlreadyRegisteredException {
-    return service.createBeer(beerDTO);
+        return service.createBeer(beerDTO);
     }
 
     @GetMapping("/{name}")
-   public BeerDTO findByName(@PathVariable String name) throws BeerNotFoundException {
+    public BeerDTO findByName(@PathVariable String name) throws BeerNotFoundException {
         return service.findByName(name);
     }
 
@@ -38,7 +38,7 @@ public class BeerController {
     @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deleteById(@PathVariable Long id) throws BeerNotFoundException {
-           service.deleteById(id);
+        service.deleteById(id);
     }
 
 }
