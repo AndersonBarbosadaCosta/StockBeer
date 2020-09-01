@@ -28,6 +28,10 @@ Após executar o comando acima, basta apenas abrir o seguinte endereço e visual
 
 http://localhost:8080/api/v1/beers
 
+Documentação da API:
+
+http://localhost:8080/swagger-ui.html
+
 São necessários os seguintes pré-requisitos para a execução do projeto :
 
 1. Java 11 ou versões superiores.
@@ -47,6 +51,5 @@ Links de apoio :
 [Referências - testes em geral com o Spring Boot](https://www.baeldung.com/spring-boot-testing "Referências - testes em geral com o Spring Boot")
 [Referência para o padrão arquitetural REST](https://restfulapi.net/ "Referência para o padrão arquitetural REST")
 [Referência pirâmide de testes - Martin Fowler](https://martinfowler.com/articles/practical-test-pyramid.html#TheImportanceOftestAutomation "Referência pirâmide de testes - Martin Fowler")
-
 
 
