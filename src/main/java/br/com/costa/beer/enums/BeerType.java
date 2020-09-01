@@ -1,8 +1,10 @@
 package br.com.costa.beer.enums;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 @Getter
+@AllArgsConstructor
 public enum BeerType {
 
     LAGER("lager"),
@@ -15,7 +17,4 @@ public enum BeerType {
 
     private final String description;
 
-    BeerType(String description) {
-        this.description = description;
-    }
 }
